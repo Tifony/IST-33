@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифные Планы - Lab 7 v2</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="auto-layout">
+    <header class="main-header">
+        <div class="logo">Lab 7 v2</div>
+        <nav class="main-nav">
+            <span class="nav-label">Вид:</span>
+            <button id="btn-desktop" class="nav-btn">Desktop</button>
+            <button id="btn-mobile" class="nav-btn">Mobile</button>
+            <button id="btn-auto" class="nav-btn active">Auto</button>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <h1 class="page-title">Тарифные планы</h1>
+
+        <div class="pricing-toggle-container">
+            <div class="toggle-bg">
+                <button class="toggle-option active" id="toggle-monthly">Ежемесячно</button>
+                <button class="toggle-option" id="toggle-yearly">Ежегодно</button>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <!-- Card 1: Start -->
+            <div class="card">
+                <h2 class="card-title">Старт</h2>
+                <p class="card-desc">Идеально подходит для частных лиц.</p>
+                <div class="card-price">
+                    <span class="price-val" data-monthly="250.00" data-yearly="2500.00">250,00 руб.</span>
+                    <span class="price-period">/ месяц</span>
+                </div>
+                <button class="card-btn">Купить сейчас</button>
+                <div class="card-features">
+                    <h3>План включен</h3>
+                    <ul>
+                        <li>50 поколений изображений</li>
+                        <li>500 кредитов</li>
+                        <li>Поддержка клиентов</li>
+                        <li>50 ГБ облачного хранилища</li>
+                        <li>Неограниченный доступ</li>
+                        <li>Неограниченная базовая функция</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2: Professional (Highlighted) -->
+            <div class="card card-highlight">
+                <h2 class="card-title">Профессиональный</h2>
+                <p class="card-desc">Идеально подходит для небольших команд.</p>
+                <div class="card-price">
+                    <span class="price-val" data-monthly="800.00" data-yearly="8000.00">800,00 руб.</span>
+                    <span class="price-period">/ месяц</span>
+                </div>
+                <button class="card-btn btn-primary">Купить сейчас</button>
+                <div class="card-features">
+                    <h3>План включен</h3>
+                    <ul>
+                        <li>100 поколений изображений</li>
+                        <li>1000 кредитов</li>
+                        <li>Поддержка клиентов</li>
+                        <li>100 ГБ облачного хранилища</li>
+                        <li>Неограниченный доступ</li>
+                        <li>Неограниченная базовая функция</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3: Enterprise -->
+            <div class="card">
+                <h2 class="card-title">Предприятие</h2>
+                <p class="card-desc">Идеально подходит для больших команд.</p>
+                <div class="card-price">
+                    <span class="price-val" data-monthly="2000.00" data-yearly="20000.00">2000,00 руб.</span>
+                    <span class="price-period">/ месяц</span>
+                </div>
+                <button class="card-btn">Купить сейчас</button>
+                <div class="card-features">
+                    <h3>План включен</h3>
+                    <ul>
+                        <li>500 поколений изображений</li>
+                        <li>5000 кредитов</li>
+                        <li>Поддержка клиентов</li>
+                        <li>500 ГБ облачного хранилища</li>
+                        <li>Неограниченный доступ</li>
+                        <li>Неограниченная базовая функция</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

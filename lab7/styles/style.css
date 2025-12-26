@@ -1,0 +1,281 @@
+:root {
+    --bg-color: #f8f9fc;
+    --primary-blue: #2d60ff;
+    --text-dark: #1a1a1a;
+    --text-gray: #718096;
+    --card-bg: #ffffff;
+    --toggle-bg: #f1f3f9;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Nav */
+.main-header {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nav-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: #f0f0f0;
+}
+
+.nav-btn.active {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+}
+
+/* Main Content */
+.content-wrapper {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+/* Toggle */
+.pricing-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.toggle-bg {
+    background: var(--toggle-bg);
+    padding: 0.3rem;
+    border-radius: 50px;
+    display: inline-flex;
+}
+
+.toggle-option {
+    border: none;
+    background: transparent;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-gray);
+    transition: 0.3s;
+}
+
+.toggle-option.active {
+    background: var(--primary-blue);
+    color: white;
+    box-shadow: 0 4px 6px rgba(45, 96, 255, 0.2);
+}
+
+/* Cards Layout */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Align centers vertically for scale effect */
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Card Styles */
+.card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 300px;
+    /* Fixed width base */
+    text-align: left;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    /* Soft shadow like image */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-desc {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    min-height: 40px;
+    /* Align text */
+}
+
+.card-price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.price-val {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price-period {
+    color: var(--text-gray);
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.card-btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    /* Smooth rounded buttons */
+    border: none;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: 0.2s;
+}
+
+.card-btn:hover {
+    background: #1e4bd1;
+}
+
+.card-features h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-features li {
+    margin-bottom: 0.8rem;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-features li::before {
+    content: "✔";
+    color: var(--primary-blue);
+    background: rgba(45, 96, 255, 0.1);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+}
+
+/* Middle Card Highlight */
+.card-highlight {
+    z-index: 10;
+    transform: scale(1.1);
+    /* Make it bigger */
+    border: 1px solid rgba(45, 96, 255, 0.1);
+}
+
+/* ============================ */
+/* VIEW SWITCHING LOGIC & MEDIA */
+/* ============================ */
+
+/* Mobile Layout Definition */
+.mobile-view-style .cards-container {
+    flex-direction: column;
+}
+
+.mobile-view-style .card {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+.mobile-view-style .card-highlight {
+    transform: scale(1);
+    /* Reset scale on mobile */
+    border: none;
+    z-index: 1;
+}
+
+/* Media Query for Automatic Response */
+@media (max-width: 900px) {
+    body.auto-layout .cards-container {
+        flex-direction: column;
+    }
+
+    body.auto-layout .card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 1rem;
+    }
+
+    body.auto-layout .card-highlight {
+        transform: scale(1);
+    }
+}
+
+/* Manual Overrides classes applied to body */
+body.view-mobile .cards-container {
+    flex-direction: column !important;
+}
+
+body.view-mobile .card {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin-bottom: 1rem;
+}
+
+body.view-mobile .card-highlight {
+    transform: scale(1) !important;
+}
+
+body.view-desktop .cards-container {
+    flex-direction: row !important;
+    align-items: center;
+}
+
+body.view-desktop .card {
+    width: 300px !important;
+}
+
+body.view-desktop .card-highlight {
+    transform: scale(1.1) !important;
+}
