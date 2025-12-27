@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторая работа №5 - Вариант 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                <div class="user-profile-header">
+                    <!-- Image contains text, so we just show the image -->
+                    <img src="images/Ava2.svg" alt="Шеленков Григорий Дмитриевич" class="avatar-full-var2">
+                </div>
+                <div class="header-actions">
+                    <!-- Instagram-like Box -->
+                    <div class="icon-social-box">📷</div>
+                    <!-- LinkedIn-like Box -->
+                    <div class="icon-social-box">in</div>
+
+                    <div class="icon-separator"></div>
+
+                    <!-- User Icon -->
+                    <span class="icon-user">👤</span>
+                </div>
+            </div>
+            <div class="header-divider"></div>
+            <nav class="header-nav">
+                <a href="#" class="nav-item active">Дом</a>
+                <a href="#" class="nav-item">Команда</a>
+                <a href="#" class="nav-item">Особенность</a>
+                <a href="#" class="nav-item">Блог</a>
+                <a href="#" class="nav-item">Контакт</a>
+                <a href="#" class="nav-item">Источник</a>
+                <a href="#" class="nav-item">Магазин</a>
+                <a href="#" class="nav-item">Более</a>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-profile">
+                <img src="images/Ava2.svg" alt="Шеленков Григорий Дмитриевич" class="avatar-full-var2">
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-item main-item">
+                    <!-- Wrapped in a div to align left together -->
+                    <div class="menu-left-group">
+                        <svg class="sidebar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <span>Панель инструментов</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <div class="menu-item has-arrow">
+                        <span>Информация</span>
+                        <span class="arrow-down">⌄</span>
+                    </div>
+                    <div class="submenu">
+                        <div class="submenu-item">
+                            <svg class="sidebar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <span>Аудитория</span>
+                        </div>
+                        <div class="submenu-item">
+                            <svg class="sidebar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                            <span>Посты</span>
+                        </div>
+                        <div class="submenu-item">
+                            <svg class="sidebar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Расписания</span>
+                        </div>
+                        <div class="submenu-item">
+                            <svg class="sidebar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                            <span>Продвигать</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item has-arrow">
+                    <span>Доход</span>
+                    <span class="arrow-right">›</span>
+                </div>
+
+                <div class="menu-item has-arrow">
+                    <span>Действия</span>
+                    <span class="arrow-right">›</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dashboard-content">
+                <div class="dashboard-header">
+                    <h1>Панель управления</h1>
+                    <p class="subtitle">Добро пожаловать обратно, Григорий!</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Аудитория</h3>
+                        <p class="stat-value">12.5K</p>
+                        <p class="stat-trend positive">↑ 12%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Доход</h3>
+                        <p class="stat-value">$4,250</p>
+                        <p class="stat-trend positive">↑ 8%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Вовлеченность</h3>
+                        <p class="stat-value">3.8%</p>
+                        <p class="stat-trend negative">↓ 1%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Посты</h3>
+                        <p class="stat-value">142</p>
+                        <p class="stat-trend neutral">0%</p>
+                    </div>
+                </div>
+
+                <div class="content-grid-row">
+                    <!-- Revenue Chart Simulation -->
+                    <div class="chart-section">
+                        <h2>Обзор Дохода</h2>
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 60%;" title="Пн"></div>
+                            <div class="bar" style="height: 80%;" title="Вт"></div>
+                            <div class="bar" style="height: 45%;" title="Ср"></div>
+                            <div class="bar" style="height: 90%;" title="Чт"></div>
+                            <div class="bar" style="height: 70%;" title="Пт"></div>
+                            <div class="bar" style="height: 50%;" title="Сб"></div>
+                            <div class="bar" style="height: 75%;" title="Вс"></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                        </div>
+                    </div>
+
+                    <!-- Recent Orders Table -->
+                    <div class="table-section">
+                        <h2>Последние Заказы</h2>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Клиент</th>
+                                    <th>Статус</th>
+                                    <th>Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1234</td>
+                                    <td>Иван И.</td>
+                                    <td><span class="status-badge received">Получено</span></td>
+                                    <td>$120.00</td>
+                                </tr>
+                                <tr>
+                                    <td>#1235</td>
+                                    <td>Анна К.</td>
+                                    <td><span class="status-badge pending">В ожидании</span></td>
+                                    <td>$75.50</td>
+                                </tr>
+                                <tr>
+                                    <td>#1236</td>
+                                    <td>Петр С.</td>
+                                    <td><span class="status-badge received">Получено</span></td>
+                                    <td>$230.00</td>
+                                </tr>
+                                <tr>
+                                    <td>#1237</td>
+                                    <td>Мария В.</td>
+                                    <td><span class="status-badge error">Отмена</span></td>
+                                    <td>$50.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="recent-section">
+                    <h2>Последние действия</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-icon">📝</span>
+                            <div class="activity-info">
+                                <h4>Опубликован новый пост</h4>
+                                <span class="activity-time">2 часа назад</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">👤</span>
+                            <div class="activity-info">
+                                <h4>Новый подписчик</h4>
+                                <span class="activity-time">5 часов назад</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">💰</span>
+                            <div class="activity-info">
+                                <h4>Получен платеж</h4>
+                                <span class="activity-time">1 день назад</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-profile-section">
+                <img src="images/Ava2.svg" alt="Шеленков Григорий Дмитриевич" class="avatar-full-var2">
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" class="social-btn linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-btn instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-btn x-twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-contacts">
+                <div class="contact-box">
+                    <div class="contact-icon-circle">📞</div>
+                    <div class="contact-text">
+                        <span class="contact-label">Тел.</span>
+                        <span class="contact-value">180-548-2588</span>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-icon-circle">✉️</div>
+                    <div class="contact-text">
+                        <span class="contact-label">Почта</span>
+                        <span class="contact-value">info@example.com</span>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-icon-circle">📍</div>
+                    <div class="contact-text">
+                        <span class="contact-label">Адрес</span>
+                        <span class="contact-value">123 Главная улица<br>Город, Страна</span>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-icon-circle">📠</div>
+                    <div class="contact-text">
+                        <span class="contact-label">Факс</span>
+                        <span class="contact-value">+1-548-2588</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Условия обслуживания</a>
+                    <a href="#">политика конфиденциальности</a>
+                    <a href="#">Безопасность</a>
+                </div>
+                <div class="footer-copyright">
+                    © Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
